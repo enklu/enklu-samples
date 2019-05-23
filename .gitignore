@@ -1,0 +1,8 @@
+*~
+.vs
+.gradle
+bin
+obj
+packages/
+.idea/
+*app-config.json
