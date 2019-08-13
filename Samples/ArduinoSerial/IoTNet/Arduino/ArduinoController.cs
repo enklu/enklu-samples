@@ -18,7 +18,7 @@ namespace ArKit
         {
             Log.Information($"Message: {message}");
 
-            // TODO: process
+            // TODO: do something with the message
         }
 
         public void Stop()
@@ -36,6 +36,7 @@ namespace ArKit
                 {
                     using (var stream = new SerialStream(_reader))
                     {
+                        // block
                         Console.Read();
                     }
                 }

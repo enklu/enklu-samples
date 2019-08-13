@@ -19,11 +19,6 @@ public:
     }
 };
 
-class TempoDetector
-{
-private: 
-}
-
 HitSensor sensors_[1];
 
 void setup(){

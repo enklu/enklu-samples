@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Threading.Tasks;
+using ArKit;
 using Enklu.Data;
 using Enklu.IoTNet.Network;
 using Mamba.Experience;
@@ -76,9 +77,8 @@ namespace Enklu.IoTNet
                 {
                     network.Start();
 
-                    // TODO: your controller here
-
-                    Console.ReadLine();
+                    // start the Arduino!
+                    new ArduinoController().Start().Wait();
                 }
             }
 
